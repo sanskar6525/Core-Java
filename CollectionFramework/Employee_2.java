@@ -29,7 +29,7 @@ public class Employee_2 implements Comparable<Employee_2> {
 
     @Override
     public int compareTo(Employee_2 other) {
-        return this.hireDate.compareTo(other.getHireDate());
+        return this.name.compareTo(other.getName());
     }
 
     @Override
@@ -37,15 +37,19 @@ public class Employee_2 implements Comparable<Employee_2> {
         return "Employee{name='" + name + "', number=" + number + ", hireDate=" + hireDate + "}";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         List<Employee_2> employees = new ArrayList<>();
+        
         employees.add(new Employee_2("John", 1001, new Date(2020, 0, 1)));
         employees.add(new Employee_2("Alice", 1002, new Date(2019, 5, 15)));
         employees.add(new Employee_2("Bob", 1003, new Date(2021, 2, 10)));
 
         Collections.sort(employees);
+        
 
         System.out.println("Employees in order of seniority:");
+        
         for (Employee_2 employee : employees) {
             System.out.println(employee);
         }

@@ -1,4 +1,4 @@
-
+package WorkRelated;
 public class Cell_Id_Generator {
 	
 	public static String Separate(String s)

@@ -13,6 +13,10 @@ public class Runner {
 		
 		QuickSort S2=new QuickSort();
 		//S2.sort(arr);
+		
+		BubbleSort S3=new BubbleSort();
+		S3.sort(arr);
+		
 	}
 
 }

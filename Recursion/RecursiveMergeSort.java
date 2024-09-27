@@ -26,15 +26,7 @@ public class RecursiveMergeSort extends ArrayExample {
 	
 	public static int[] merge(int[] a1,int[] a2)
 	{
-		
-		/*
-		 * printArray(a1); printArray(a2);
-		 */
-		
 		int[] m=new int[a1.length+a2.length];
-		/*
-		 * int[] m2=new int[a1.length+a2.length]; printArray(m2);
-		 */
 		int i=0,j=0,k=0;
 		
 		while((i<a1.length) && (j<a2.length))
@@ -65,8 +57,6 @@ public class RecursiveMergeSort extends ArrayExample {
 			k++;
 			j++;
 		}
-		
-		//printArray(m);
 		return m;
 	}
 	

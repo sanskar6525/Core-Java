@@ -19,7 +19,7 @@ public class TreeNode {
 	    TreeNode treeNode3 = new TreeNode(3);
 	    TreeNode treeNode4 = new TreeNode(4);
 	    TreeNode treeNode5 = new TreeNode(5);
-	    TreeNode treeNode6 = new TreeNode(6);
+	    TreeNode treeNode6 = new TreeNode(60);
 	    TreeNode treeNode7 = new TreeNode(7);
 	    TreeNode treeNode8 = new TreeNode(8);
 	 

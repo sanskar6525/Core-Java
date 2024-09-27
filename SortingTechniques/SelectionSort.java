@@ -6,17 +6,22 @@ public class SelectionSort {
 	
 	public void sort(int[] a)
 	{
-		int j,key;
-		for(int i=1;i<a.length;i++)
+		
+		for(int i=0;i<a.length-1;i++)
 		{
-			j=i-1;
-			key=a[i];
-			while(j>=0 && a[j]>key)
-			{
-				a[j+1]=a[j];
-				j--;
+			int index=i;
+			int small=a[i];
+			for(int j=i+1;j<a.length;j++)
+			{	
+				if(a[j]<a[index])
+				{
+					index=j;
+				}
 			}
-			a[j+1]=key;	
+			int temp=a[i];
+			a[i]=a[index];
+			a[index]=temp;
+			
 		}
 		System.out.println(Arrays.toString(a));
 	}
